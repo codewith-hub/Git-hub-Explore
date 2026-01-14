@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>GitHub User Explorer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<button class="dark-btn" onclick="toggleDark()">🌙 Dark Mode</button>
+
+<div class="container">
+  <h2>GitHub User Explorer</h2>
+
+  <input type="text" id="username" placeholder="Enter GitHub username">
+  <button onclick="searchUser()">Search</button>
+
+  <p id="error"></p>
+
+  <!-- Loader -->
+  <div id="loader"></div>
+
+  <!-- Filter -->
+  <select id="filter" onchange="filterRepos()" style="display:none">
+    <option value="all">All Repositories</option>
+    <option value="stars">Most Starred</option>
+  </select>
+
+  <div id="profile"></div>
+  <div id="repos"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+body {
+  font-family: Arial;
+  background: #f5f5f5;
+  transition: 0.3s;
+}
+
+.dark {
+  background: #121212;
+  color: white;
+}
+
+.container {
+  width: 60%;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.dark .container {
+  background: #1e1e1e;
+}
+
+input, button, select {
+  padding: 10px;
+  margin: 5px;
+}
+
+button {
+  cursor: pointer;
+}
+
+#profile img {
+  width: 150px;
+  border-radius: 50%;
+}
+
+.repo {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+}
+
+.dark .repo {
+  border-color: gray;
+}
+
+#error {
+  color: red;
+}
+
+/* Loader */
+#loader {
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid #333;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin: 20px auto;
+  display: none;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  100% { transform: rotate(360deg); }
+}
+
+/* Dark button */
+.dark-btn {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+}
